@@ -2,28 +2,36 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>David Peretz</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: black;
       font-family: Arial, sans-serif;
       overflow: hidden;
+      background-color: black;
       color: gold;
     }
 
-    video {
+    .video-bg {
       position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
       z-index: -1;
-      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .video-bg iframe {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      pointer-events: none;
     }
 
     .links {
@@ -35,6 +43,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+      z-index: 1;
     }
 
     .links a {
@@ -52,20 +61,24 @@
       width: 100%;
       text-align: center;
       font-size: 14px;
+      z-index: 1;
     }
 
     .footer a {
       color: gold;
       text-decoration: none;
     }
-
   </style>
 </head>
 <body>
 
-<video autoplay muted loop>
-  <source src="סמבה קליפ.MP4" type="video/mp4">
-</video>
+<div class="video-bg">
+  <iframe src="https://www.youtube.com/embed/c0PNqc6DQ0I?autoplay=1&mute=1&controls=0&loop=1&playlist=c0PNqc6DQ0I&modestbranding=1&showinfo=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+  </iframe>
+</div>
 
 <div class="links">
   <a href="https://youtube.com/@davidperetzofficial" target="_blank">יוטיוב</a>
