@@ -2,94 +2,84 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>דוד פרץ</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-            color: gold;
-            background-color: black;
-            overflow: hidden;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Peretz</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      color: gold;
+    }
 
-        .video-background {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-            object-fit: cover;
-        }
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
 
-        .content {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            transform: translateY(-50%);
-        }
+    .links {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
 
-        .links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
+    .links a {
+      background-color: gold;
+      color: black;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
 
-        .links a {
-            background-color: gold;
-            color: black;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
 
-        .footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            font-size: 14px;
-            color: gold;
-        }
+    .footer a {
+      color: gold;
+      text-decoration: none;
+    }
 
-        .footer a {
-            color: gold;
-            text-decoration: none;
-        }
-    </style>
+  </style>
 </head>
 <body>
 
-<video autoplay muted loop class="video-background">
-    <source src="https://github.com/davidperetzdp/davidperetzdp.github.io/assets/your-video-file.mp4" type="video/mp4">
-    הדפדפן שלך אינו תומך בוידאו.
+<video autoplay muted loop>
+  <source src="סמבה קליפ.MP4" type="video/mp4">
 </video>
 
-<div class="content">
-    <div class="links">
-        <a href="#">יוטיוב</a>
-        <a href="#">ספוטיפי</a>
-        <a href="#">אפל מיוזיק</a>
-        <a href="#">אינסטגרם</a>
-        <a href="#">טיקטוק</a>
-        <a href="#">פייסבוק</a>
-    </div>
+<div class="links">
+  <a href="https://youtube.com/@davidperetzofficial" target="_blank">יוטיוב</a>
+  <a href="https://open.spotify.com/artist/2JAd4m4DdKemhwMBFTIe8I" target="_blank">ספוטיפיי</a>
+  <a href="https://music.apple.com/il/artist/דוד-פרץ/1492059853" target="_blank">אפל מיוזיק</a>
+  <a href="https://www.instagram.com/davidperetz_official" target="_blank">אינסטגרם</a>
+  <a href="https://www.tiktok.com/@davidperetz_official" target="_blank">טיקטוק</a>
+  <a href="https://www.facebook.com/share/1H5RnJ1Vq1" target="_blank">פייסבוק</a>
 </div>
 
 <div class="footer">
-    <p>
-        צור קשר:
-        <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> |
-        <a href="tel:0552477710">055-2477710</a>
-    </p>
-    <p>© 2025 דוד פרץ - כל הזכויות שמורות</p>
+  צור קשר: <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> |
+  <a href="tel:0552477710">055-2477710</a><br>
+  © 2025 דוד פרץ - כל הזכויות שמורות
 </div>
 
 </body>
