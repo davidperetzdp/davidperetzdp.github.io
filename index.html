@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>דוד פרץ - זמר וראפר</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            color: gold;
+            position: relative;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background iframe {
+            width: 100vw;
+            height: 56.25vw; /* 16:9 ratio */
+            min-height: 100vh;
+            min-width: 177.77vh; /* 16:9 ratio */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.75);
+            z-index: 0;
+        }
+
+        header, section, footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        footer {
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="video-background">
+    <iframe src="https://www.youtube.com/embed/iSpex248Ego?autoplay=1&mute=1&controls=0&loop=1&playlist=iSpex248Ego&modestbranding=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="overlay"></div>
+
+<header>
+    <h1>דוד פרץ</h1>
+    <p>זמר וראפר שעושה רעש חדש במוזיקה הישראלית. מביא ביטים חדים, מילים מהלב וסטייל שמדליק כל במה.<br>שירים שנכנסים לראש, הופעות שמרגישות כמו מסיבה. תעקבו, תזרמו, תזמינו.</p>
+</header>
+
+<section class="links">
+    <a href="https://youtube.com/@davidperetzofficial?si=8W2Nw2PcrDLm3f4O" target="_blank">יוטיוב</a>
+    <a href="https://open.spotify.com/artist/2JAd4m4DdKemhwMBFTIe8I?si=G7Rv6jZrTjqhgp9bIJfBRQ" target="_blank">ספוטיפיי</a>
+    <a href="https://music.apple.com/il/artist/%D7%93%D7%95%D7%93-%D7%A4%D7%A8%D7%A5/1492059853?l=he" target="_blank">אפל מיוזיק</a>
+    <a href="https://www.instagram.com/davidperetz_official?igsh=YXk4YTRiNGlqMTc3&utm_source=qr" target="_blank">אינסטגרם</a>
+    <a href="https://www.tiktok.com/@davidperetz_official?_t=ZS-8vOKvJlUQ7E&_r=1" target="_blank">טיקטוק</a>
+    <a href="https://www.facebook.com/share/1H5RnJ1Vq1/?mibextid=wwXIfr" target="_blank">פייסבוק</a>
+</section>
+
+<section class="contact">
+    <h3>צור קשר</h3>
+    <p>מייל: davidpertezdpdp@gmail.com</p>
+    <p>טלפון להזמנות: 055-2477710</p>
+</section>
+
+<footer>
+    &copy; 2025 דוד פרץ - כל הזכויות שמורות
+</footer>
+
+</body>
+</html>
