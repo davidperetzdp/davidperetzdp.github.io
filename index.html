@@ -2,99 +2,91 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>David Peretz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>דוד פרץ</title>
+</head>
+<body>
+  <div class="video-background">
+    <iframe 
+      src="https://www.youtube.com/embed/c0PNqc6DQ0I?autoplay=1&mute=1&loop=1&playlist=c0PNqc6DQ0I&controls=0&showinfo=0&modestbranding=1" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="content">
+    <div class="links">
+      <a href="https://www.youtube.com/" target="_blank">יוטיוב</a>
+      <a href="https://open.spotify.com/" target="_blank">ספוטיפיי</a>
+      <a href="https://music.apple.com/" target="_blank">אפל מיוזיק</a>
+      <a href="https://www.instagram.com/" target="_blank">אינסטגרם</a>
+      <a href="https://www.tiktok.com/" target="_blank">טיקטוק</a>
+      <a href="https://www.facebook.com/" target="_blank">פייסבוק</a>
+    </div>
+
+    <div class="footer">
+      <p>
+        צור קשר: <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> |
+        <a href="tel:0552477710">055-2477710</a>
+      </p>
+      <p>© 2025 דוד פרץ - כל הזכויות שמורות</p>
+    </div>
+  </div>
+
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
+      direction: rtl;
       background-color: black;
       color: gold;
     }
 
-    .video-container {
+    .video-background {
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
       width: 100%;
+      height: 100%;
       z-index: -1;
       overflow: hidden;
     }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .video-background iframe {
       width: 100vw;
-      height: 56.25vw; /* 16:9 aspect ratio */
-      min-height: 100vh;
-      min-width: 177.77vh; /* 16:9 aspect ratio */
+      height: 100vh;
     }
 
-    .links {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      z-index: 1;
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 20vh;
     }
 
     .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
       background-color: gold;
       color: black;
-      padding: 12px 20px;
-      text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
+      text-decoration: none;
+      border-radius: 8px;
     }
 
     .footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-      z-index: 1;
+      margin-top: 50px;
+      font-size: 0.9em;
     }
 
     .footer a {
       color: gold;
-      text-decoration: none;
+      text-decoration: underline;
     }
   </style>
-</head>
-<body>
-
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/c0PNqc6DQ0I?autoplay=1&mute=1&controls=0&loop=1&playlist=c0PNqc6DQ0I&modestbranding=1&showinfo=0"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen>
-  </iframe>
-</div>
-
-<div class="links">
-  <a href="https://youtube.com/@davidperetzofficial" target="_blank">יוטיוב</a>
-  <a href="https://open.spotify.com/artist/2JAd4m4DdKemhwMBFTIe8I" target="_blank">ספוטיפיי</a>
-  <a href="https://music.apple.com/il/artist/דוד-פרץ/1492059853" target="_blank">אפל מיוזיק</a>
-  <a href="https://www.instagram.com/davidperetz_official" target="_blank">אינסטגרם</a>
-  <a href="https://www.tiktok.com/@davidperetz_official" target="_blank">טיקטוק</a>
-  <a href="https://www.facebook.com/share/1H5RnJ1Vq1" target="_blank">פייסבוק</a>
-</div>
-
-<div class="footer">
-  צור קשר: <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> |
-  <a href="tel:0552477710">055-2477710</a><br>
-  © 2025 דוד פרץ - כל הזכויות שמורות
-</div>
-
 </body>
 </html>
