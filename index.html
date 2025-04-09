@@ -2,89 +2,93 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>David Peretz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>דוד פרץ</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
       height: 100%;
       font-family: Arial, sans-serif;
       overflow: hidden;
-      direction: rtl;
     }
 
-    .background-video {
+    video {
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
       z-index: -1;
-      pointer-events: none;
+      object-fit: cover;
     }
 
     .content {
       position: relative;
       z-index: 1;
       height: 100%;
+      width: 100%;
+      color: yellow;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      color: yellow;
+      background-color: rgba(0, 0, 0, 0.4);
       padding: 20px;
     }
 
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin-bottom: 1.5em;
+    }
+
     .buttons {
-      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 1.5em;
     }
 
     .buttons a {
-      text-decoration: none;
+      background: yellow;
       color: black;
-      background-color: yellow;
       padding: 10px 16px;
-      margin: 5px;
-      display: inline-block;
-      border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
+      border-radius: 4px;
     }
 
-    footer {
+    .footer {
       position: absolute;
       bottom: 10px;
       width: 100%;
       text-align: center;
-      font-size: 14px;
-      color: yellow;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 10px 0;
-    }
-
-    footer a {
-      color: yellow;
-      text-decoration: none;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <div class="background-video">
-    <iframe src="https://www.youtube.com/embed/c0PNqc6DQ0I?autoplay=1&mute=1&controls=0&loop=1&playlist=c0PNqc6DQ0I"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            style="width: 100vw; height: 100vh;">
-    </iframe>
-  </div>
+  <video autoplay muted loop>
+    <source src="סמבה קליפ.MP4" type="video/mp4">
+    הדפדפן שלך לא תומך בווידאו.
+  </video>
 
   <div class="content">
     <h1>דוד פרץ</h1>
-    <p>
-      זמר וראפר שעושה רעש חדש במוזיקה הישראלית. מביא ביטים חדים, מילים מהלב וסטייל שמדליק כל במה.
-    </p>
+    <p>זמר וראפר שעושה רעש חדש במוזיקה הישראלית. מביא ביטים חדים, מילים מהלב וסטייל שמדליק כל במה. שירים שנכנסים לראש, הופעות שמרגישות כמו מסיבה. תעקבו, תזמינו, תחגגו.</p>
 
     <div class="buttons">
       <a href="#">יוטיוב</a>
@@ -94,13 +98,12 @@
       <a href="#">טיקטוק</a>
       <a href="#">פייסבוק</a>
     </div>
-  </div>
 
-  <footer>
-    צור קשר: <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> |
-    טלפון להזמנות: <a href="tel:0552477710">055-2477710</a><br>
-    © 2025 דוד פרץ - כל הזכויות שמורות
-  </footer>
+    <div class="footer">
+      צור קשר: <a href="mailto:davidperetzdp@gmail.com">davidperetzdp@gmail.com</a> | טלפון להזמנות: <a href="tel:0552477710">055-2477710</a><br />
+      © 2025 דוד פרץ - כל הזכויות שמורות
+    </div>
+  </div>
 
 </body>
 </html>
